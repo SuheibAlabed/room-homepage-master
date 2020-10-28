@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+header {
+  z-index: 10;
+  position: absolute;
+}
+
+.Card1 {
+  display: flex;
+  width: 100%;
+}
+.container {
+  position: absolute;
+  top: 0;
+}
+.container #headerNav ul li {
+  display: inline;
+  margin: 40px 5px 0 5px;
+  padding: 10px;
+  transition: all 0.1s;
+}
+.container #headerNav ul li:hover {
+  border-bottom: 2px solid hsl(0, 0%, 27%);
+  border-radius: 20px;
+}
+.container #headerNav {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.container #headerNav ul li a {
+  text-decoration-line: none;
+  color: white;
+}
+.Row2 {
+  display: flex;
+  margin: 0;
+}
+.slide_1 {
+  background: white;
+  width: 100vh;
+  padding: 150px;
+  justify-items: center;
+  position: relative;
+}
+.slide_1 h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.slide_1 .Card-info {
+  opacity: 50%;
+}
+.slide_1 img {
+  margin-left: 40px;
+}
+.slide_1 span button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  opacity: 50%;
+  letter-spacing: 10px;
+  margin-top: 41px;
+}
+.slide_1 span button:hover {
+  cursor: pointer;
+}
+.pic {
+  z-index: -1;
+}
+.BtnSlider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* margin: 10px 0 0 0; */
+  background: hsl(0, 0%, 27%);
+  z-index: 1000;
+}
+.BtnSlider button {
+  padding: 30px;
+  padding-right: 65px;
+  background: hsl(0, 0%, 27%);
+  border: none;
+  outline: none;
+}
+
+.BtnSlider button:hover {
+  cursor: pointer;
+  background: hsl(0, 0%, 63%);
+}
+.Card2_2 {
+  top: 0;
+  display: flex;
+  z-index: -1;
+}
+
+.Card6 {
+  background: white;
+  width: auto;
+  justify-items: center;
+  font-size: 13px;
+  padding-left: 50px;
+  padding-top: 70px;
+}
+.Card6 h4 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+}
+.Card6 .Card-info {
+  opacity: 50%;
+}
+@media screen and (max-width: 480px) {
+  .Card1,
+  .CardsSlider,
+  .Row2 {
+    flex-direction: column;
+    width: 100vh;
+  }
+
+  .Card6 {
+    width: 70vh;
+    margin: 100px auto;
+    text-align: center;
+  }
+  .BtnSlider {
+    display: none;
+  }
+  body {
+    text-align: center;
+  }
+  #headerNav {
+    display: none;
+  }
+}
